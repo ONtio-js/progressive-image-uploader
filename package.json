@@ -1,0 +1,45 @@
+{
+	"name": "image uploader",
+	"version": "1.0.0",
+	"description": "A lightweight, framework-agnostic image uploader component with drag & drop support",
+	"main": "dist/index.js",
+	"module": "src/index.js",
+	"files": [
+		"dist/",
+		"src/",
+		"README.md"
+	],
+	"scripts": {
+		"build": "node build.js",
+		"dev": "node -e \"console.log('Open examples/index.html in your browser')\"",
+		"prepublishOnly": "npm run build"
+	},
+	"keywords": [
+		"image",
+		"uploader",
+		"drag-drop",
+		"vanilla-js",
+		"file-upload",
+		"images",
+		"ui-component",
+		"frontend"
+	],
+	"author": "Your Name <your.email@example.com>",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yourusername/vanilla-image-uploader.git"
+	},
+	"bugs": {
+		"url": "https://github.com/yourusername/vanilla-image-uploader/issues"
+	},
+	"homepage": "https://github.com/yourusername/vanilla-image-uploader#readme",
+	"devDependencies": {
+		"terser": "^5.19.0"
+	},
+	"browserslist": [
+		"> 1%",
+		"last 2 versions",
+		"not dead"
+	]
+}

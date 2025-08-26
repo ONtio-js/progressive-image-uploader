@@ -1,0 +1,5 @@
+build.js
+dist
+.vscode
+node_modules
+vanilla-image-uploader-1.0.0.tgz
