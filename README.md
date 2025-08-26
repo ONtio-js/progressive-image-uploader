@@ -1,10 +1,10 @@
-# 🖼️ Vanilla Image Uploader
+# Progressive Image Uploader
 
 A lightweight, framework-agnostic image uploader component with drag & drop support, built in pure JavaScript.
 
-## ✨ Features
+##  Features
 
-- **Zero Dependencies** - Pure vanilla JavaScript
+- **Zero Dependencies** - Pure progressive JavaScript
 - **Responsive Design** - Works on desktop and mobile
 - **Drag & Drop** - Intuitive drag and drop interface
 - **Click to Browse** - Traditional file picker fallback
@@ -12,19 +12,19 @@ A lightweight, framework-agnostic image uploader component with drag & drop supp
 - **Progress Tracking** - Upload progress indicators
 - **File Validation** - Size, type, and count restrictions
 - **Customizable** - Flexible styling and configuration
-- **Universal** - Works with any framework or vanilla JS
+- **Universal** - Works with any framework or progressive JS
 
 ## Installation
 
 ```bash
-npm install vanilla-image-uploader
+npm install progressive-image-uploader
 ```
 
 ##  Quick Start
 
 ### ES6 Modules
 ```javascript
-import ImageUploader from 'vanilla-image-uploader';
+import ImageUploader from 'progressive-image-uploader';
 
 const uploader = new ImageUploader('#uploader-container', {
   maxFiles: 5,
@@ -38,20 +38,20 @@ const uploader = new ImageUploader('#uploader-container', {
 
 ### CommonJS
 ```javascript
-const ImageUploader = require('vanilla-image-uploader');
+const ImageUploader = require('progressive-image-uploader');
 
 const uploader = new ImageUploader('#uploader-container', options);
 ```
 
 ### Browser Script Tag
 ```html
-<script src="node_modules/vanilla-image-uploader/dist/index.min.js"></script>
+<script src="node_modules/progressive-image-uploader/dist/index.min.js"></script>
 <script>
   const uploader = new ImageUploader('#uploader-container', options);
 </script>
 ```
 
-## 🔧 Configuration Options
+##  Configuration Options
 
 | Option | Type | Default | Description |
 |--------|------|---------|-------------|
@@ -165,7 +165,7 @@ Cleanup and remove the uploader from DOM.
 uploader.destroy();
 ```
 
-## 🎨 Styling
+## Styling
 
 The component includes default styles, but you can customize the appearance:
 
@@ -196,12 +196,12 @@ const uploader = new ImageUploader('#container', {
 }
 ```
 
-## 📱 Framework Integration
+## Framework Integration
 
 ### React
 ```jsx
 import { useEffect, useRef } from 'react';
-import ImageUploader from 'vanilla-image-uploader';
+import ImageUploader from 'progressive-image-uploader';
 
 function MyComponent() {
   const uploaderRef = useRef();
@@ -227,7 +227,7 @@ function MyComponent() {
 </template>
 
 <script>
-import ImageUploader from 'vanilla-image-uploader';
+import ImageUploader from 'progressive-image-uploader';
 
 export default {
   mounted() {
