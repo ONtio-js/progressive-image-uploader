@@ -4,23 +4,23 @@ A lightweight, framework-agnostic image uploader component with drag & drop supp
 
 ## ✨ Features
 
-- **🚀 Zero Dependencies** - Pure vanilla JavaScript
-- **📱 Responsive Design** - Works on desktop and mobile
-- **🖱️ Drag & Drop** - Intuitive drag and drop interface
-- **👆 Click to Browse** - Traditional file picker fallback
-- **📸 Image Previews** - Thumbnail previews with remove option
-- **📊 Progress Tracking** - Upload progress indicators
-- **✅ File Validation** - Size, type, and count restrictions
-- **🎨 Customizable** - Flexible styling and configuration
-- **🌐 Universal** - Works with any framework or vanilla JS
+- **Zero Dependencies** - Pure vanilla JavaScript
+- **Responsive Design** - Works on desktop and mobile
+- **Drag & Drop** - Intuitive drag and drop interface
+- **Click to Browse** - Traditional file picker fallback
+- **Image Previews** - Thumbnail previews with remove option
+- **Progress Tracking** - Upload progress indicators
+- **File Validation** - Size, type, and count restrictions
+- **Customizable** - Flexible styling and configuration
+- **Universal** - Works with any framework or vanilla JS
 
-## 📦 Installation
+## Installation
 
 ```bash
 npm install vanilla-image-uploader
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### ES6 Modules
 ```javascript
@@ -65,7 +65,7 @@ const uploader = new ImageUploader('#uploader-container', options);
 | `removeText` | String | `'×'` | Remove button text |
 | `theme` | String | `'default'` | CSS theme class |
 
-## 📋 Event Callbacks
+## Event Callbacks
 
 ### `onFilesAdded(files)`
 Called when files are added to the uploader.
@@ -139,7 +139,7 @@ onError: (message) => {
 }
 ```
 
-## 🎯 API Methods
+##  API Methods
 
 ### `getFiles()`
 Returns array of currently selected files.
@@ -244,13 +244,13 @@ export default {
 </script>
 ```
 
-## 🌟 Examples
+##  Examples
 
 ### Basic Upload to Server
 ```javascript
 const uploader = new ImageUploader('#uploader', {
   maxFiles: 3,
-  maxFileSize: 2 * 1024 * 1024, // 2MB
+  maxFileSize: 2 * 1024 * 1024, 
   onUpload: async (file, progressCallback) => {
     const formData = new FormData();
     formData.append('file', file);
@@ -276,14 +276,14 @@ const uploader = new ImageUploader('#uploader', {
 ```javascript
 const uploader = new ImageUploader('#uploader', {
   onUpload: async (file, progressCallback) => {
-    // Get signed URL from your backend
+    
     const { uploadUrl } = await fetch('/api/s3-upload-url', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ fileName: file.name, fileType: file.type })
     }).then(r => r.json());
     
-    // Upload directly to S3
+    
     return new Promise((resolve, reject) => {
       const xhr = new XMLHttpRequest();
       
@@ -309,7 +309,7 @@ const uploader = new ImageUploader('#uploader', {
 });
 ```
 
-## 🤝 Contributing
+##  Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -317,11 +317,11 @@ const uploader = new ImageUploader('#uploader', {
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🚀 Changelog
+##  Changelog
 
 ### v1.0.0
 - Initial release
